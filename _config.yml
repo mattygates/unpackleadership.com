@@ -1,0 +1,60 @@
+# Site
+name: "unpackleadership"
+title: "unpackleadership.com"
+description: "Leadership development, intercultural communication, and practical insights for a connected world."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ""
+google_analytics: ''
+disqus: ''
+mailchimp-list: ''
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  matt:
+    name: MattYGates
+    display_name: Matt Gates
+    gravatar: 
+    email: matt.gates65@gmail.com
+    web: https://unpackleadership.com
+    twitter: 
+    description: "Leadership development and intercultural communication. Based in Vancouver, Canada."
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+    
+# Pagination V2
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/page:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate)
+adsense: "disabled"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

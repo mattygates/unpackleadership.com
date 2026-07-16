@@ -1,166 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>unpackleadership.com — Leadership Development & Intercultural Insights</title>
-  <meta name="description" content="Leadership development, intercultural communication, and AI in people development. Practical insights from Matt Gates.">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔓</text></svg>">
-</head>
-<body>
+---
+layout: default
+title: Home
+pagination:
+  enabled: true
+---
 
-  <!-- Navigation -->
-  <nav>
-    <div class="container-wide">
-      <a href="/" class="nav-brand">unpackleadership</a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog/">Articles</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
+{% if page.url == "/" %}
+
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
     </div>
-  </nav>
+    <div class="row">
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <p class="location">Vancouver, Canada</p>
-          <h1>Matt Gates — Leadership Development &amp; Intercultural Communication</h1>
-          <p class="subtitle">Lead with clarity. Connect across cultures. Build with purpose.</p>
-          <p class="bio">
-            I help leaders and teams navigate complexity across cultures. With a focus on leadership development, intercultural communication, and the human side of organizational change, I write about what actually works in practice.
-          </p>
-          <a href="/about/" class="btn">More about me</a>
-        </div>
-        <div class="hero-images">
-          <div class="placeholder">
-            Your photo here<br>
-            <span style="font-size:11px;color:#a09c94;">(replace with your image)</span>
-          </div>
-        </div>
-      </div>
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
     </div>
-  </section>
+</section>
 
-  <hr class="section-divider">
+{% endif %}
 
-  <!-- Latest Articles -->
-  <section class="blog-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Latest Articles</h2>
-        <a href="/blog/" class="view-all">View all &rarr;</a>
-      </div>
-      <div class="blog-grid">
-        <a href="/blog/welcome-to-unpackleadership/" class="blog-card">
-          <div class="blog-card-image">
-            <span>Image placeholder</span>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-card-tag">Leadership</span>
-            <p class="blog-card-meta">June 2025 &middot; 3 min read</p>
-            <h3>Welcome to unpackleadership</h3>
-            <p>Why this site exists and what you'll find here — practical leadership insights for a connected world.</p>
-          </div>
-        </a>
-        <a href="/blog/" class="blog-card">
-          <div class="blog-card-image">
-            <span>Image placeholder</span>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-card-tag">Intercultural</span>
-            <p class="blog-card-meta">Coming soon</p>
-            <h3>More articles coming</h3>
-            <p>New content on leadership development, intercultural communication, and organizational change.</p>
-          </div>
-        </a>
-        <a href="/blog/" class="blog-card">
-          <div class="blog-card-image">
-            <span>Image placeholder</span>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-card-tag">Research</span>
-            <p class="blog-card-meta">Coming soon</p>
-            <h3>Research &amp; Insights</h3>
-            <p>Deep dives into the latest thinking on leadership, culture, and human development.</p>
-          </div>
-        </a>
-      </div>
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Stories</span></h2>
+
     </div>
-  </section>
 
-  <hr class="section-divider">
+    <div class="row listrecent">
 
-  <!-- Topic Categories -->
-  <section class="topics-section">
-    <div class="container">
-      <h2 style="font-size:24px;font-weight:700;color:#1e1c16;margin-bottom:32px;">Explore by Topic</h2>
-      <div class="topics-grid">
-        <a href="/blog/" class="topic-card">
-          <h3>Leadership Development</h3>
-          <p>Practical frameworks for developing leaders at every level. Coaching, feedback, psychological safety, and building high-performing teams.</p>
-          <span class="read-link">Read articles &rarr;</span>
-        </a>
-        <a href="/blog/" class="topic-card">
-          <h3>Intercultural Communication</h3>
-          <p>Working across cultures, languages, and perspectives. What global leadership really demands and how to bridge the gaps that matter.</p>
-          <span class="read-link">Read articles &rarr;</span>
-        </a>
-        <a href="/blog/" class="topic-card">
-          <h3>Organizational Change</h3>
-          <p>How people and organizations actually change. The human side of transformation, from individual behavior to system-wide shifts.</p>
-          <span class="read-link">Read articles &rarr;</span>
-        </a>
-        <a href="/blog/" class="topic-card">
-          <h3>Research &amp; Practice</h3>
-          <p>Bridging academic research and real-world practice. Evidence-based insights for leaders who want to go deeper.</p>
-          <span class="read-link">Read articles &rarr;</span>
-        </a>
-      </div>
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
     </div>
-  </section>
 
-  <hr class="section-divider">
+</section>
 
-  <!-- About -->
-  <section class="about-section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image">
-          <span>Your photo</span>
-        </div>
-        <div class="about-content">
-          <h2>About Matt Gates</h2>
-          <p>
-            I work at the intersection of leadership development and intercultural communication. My focus is on helping leaders and teams build the capabilities they need to thrive in a complex, connected world.
-          </p>
-          <p>
-            This site is where I share what I'm learning — from research, from practice, and from the leaders I work with. No fluff, just practical insights grounded in real experience.
-          </p>
-          <a href="/about/" class="btn">Read the full story</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
 
-  <hr class="section-divider">
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <ul class="footer-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog/">Articles</a></li>
-          <li><a href="/about/">About</a></li>
-        </ul>
-        <p class="footer-copy">&copy; 2025 Matt Gates. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
