@@ -18,9 +18,9 @@ author:
   roles: "Leadership Development · Intercultural Communication · Coaching"
   bio: "I help leaders and teams build the self-awareness, coaching skills, and cross-cultural fluency they need to lead well in a connected world."
 
-# Social links (placeholders — replace with your real profile URLs)
+# Social links (replace youtube placeholder with your real profile URL when ready)
 social:
-  linkedin: "#"
+  linkedin: "https://www.linkedin.com/in/mattygates/"
   youtube: "#"
 
 # Authors (used by post front matter, kept for compatibility with existing posts)
