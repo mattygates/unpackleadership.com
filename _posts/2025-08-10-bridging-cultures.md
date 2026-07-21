@@ -2,8 +2,8 @@
 layout: post
 title: "Bridging Cultures: Communication Across Boundaries"
 author: matt
-categories: [Intercultural]
-image: assets/images/intercultural.png
+categories: ["Lead Across Cultures"]
+image: assets/images/placeholder-article.svg
 tags: [intercultural, communication, global-teams]
 ---
 

@@ -1,63 +1,59 @@
 ---
 layout: default
 title: Home
-pagination:
-  enabled: true
 ---
 
-{% if page.url == "/" %}
+{% include hero.html %}
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Latest Articles</h2>
+      <a class="view-all" href="{{ site.baseurl }}/articles/">View all →</a>
     </div>
-    <div class="row">
 
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
+    <div class="card-grid">
+      {% assign latest_posts = site.posts | slice: 0, 6 %}
+      {% for post in latest_posts %}
+        {% include postbox.html post=post %}
+      {% endfor %}
     </div>
+  </div>
 </section>
 
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
+<section class="section section-alt">
+  <div class="wrap">
+    <span class="section-eyebrow">Explore by topic</span>
+    <div class="section-head">
+      <h2>Leadership, L&amp;D, and Cross-Cultural Insights</h2>
     </div>
 
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
+    <div class="topic-grid">
+      {% for topic in site.topics %}
+        {% include topic-card.html topic=topic %}
+      {% endfor %}
     </div>
-
+  </div>
 </section>
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
+<section class="section about-teaser">
+  <div class="wrap">
+    <div class="about-teaser-figure">
+      <img src="{{ site.baseurl }}/assets/images/placeholder-portrait.svg" alt="Photo placeholder for Matt Gates">
+    </div>
+    <div>
+      <span class="section-eyebrow">About Matt Gates</span>
+      <h2>{{ site.author.bio }}</h2>
+      <a class="view-all" href="{{ site.baseurl }}/about">Read the full story →</a>
+    </div>
+  </div>
+</section>
 
+<section class="section section-alt">
+  <div class="wrap">
+    <span class="section-eyebrow">Videos</span>
+    <h2>Leadership Talks and Practical Frameworks</h2>
+    <p class="hero-bio">I make videos on leadership development, coaching, and working across cultures. New videos drop regularly.</p>
+    <a class="btn btn-solid" href="{{ site.baseurl }}/videos">Browse all videos →</a>
+  </div>
+</section>

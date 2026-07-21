@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Video thumbnail placeholder">
+  <rect width="800" height="450" fill="#023e73"/>
+  <rect x="14" y="14" width="772" height="422" rx="12" fill="none" stroke="#f5f4f0" stroke-width="3" stroke-dasharray="10 8" opacity="0.5"/>
+
+  <circle cx="400" cy="205" r="56" fill="#f5f4f0" opacity="0.95"/>
+  <path d="M384 178 L432 205 L384 232 Z" fill="#023e73"/>
+
+  <text x="400" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#f5f4f0">VIDEO PLACEHOLDER</text>
+</svg>

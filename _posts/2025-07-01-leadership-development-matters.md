@@ -2,8 +2,8 @@
 layout: post
 title: "Why Leadership Development Matters More Than Ever"
 author: matt
-categories: [Leadership]
-image: assets/images/coaching.png
+categories: ["Lead Others"]
+image: assets/images/placeholder-article.svg
 tags: [leadership, development, coaching]
 ---
 

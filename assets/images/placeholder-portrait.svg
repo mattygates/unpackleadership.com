@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="Portrait placeholder">
+  <rect width="500" height="500" fill="#efece0"/>
+  <rect x="16" y="16" width="468" height="468" rx="14" fill="none" stroke="#023e73" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <circle cx="250" cy="185" r="70" fill="#023e73" opacity="0.9"/>
+  <path d="M125 400 C125 285 375 285 375 400 L375 420 L125 420 Z" fill="#023e73" opacity="0.9"/>
+
+  <text x="250" y="458" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#023e73">PHOTO PLACEHOLDER</text>
+</svg>

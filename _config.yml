@@ -1,26 +1,52 @@
 # Site
-name: "unpackleadership.com"
-title: "Let's Unpack Leadership Together"
-description: "Leadership development, intercultural communication, and practical insights for a connected world."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+name: "Unpack Leadership"
+title: "Lead yourself. Lead others. Lead across cultures."
+description: "Leadership development and intercultural communication insights from Matt Gates."
+logo: 'assets/images/logo-placeholder.svg'
+favicon: 'assets/images/logo-placeholder.svg'
 baseurl: ""
 google_analytics: ''
-disqus: ''
-mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
-# Authors
+# Author
+author:
+  name: Matt Gates
+  location: "Vancouver, Canada"
+  email: matt.gates65@gmail.com
+  headline: "Lead yourself. Lead others. Lead across cultures."
+  roles: "Leadership Development · Intercultural Communication · Coaching"
+  bio: "I help leaders and teams build the self-awareness, coaching skills, and cross-cultural fluency they need to lead well in a connected world."
+
+# Social links (placeholders — replace with your real profile URLs)
+social:
+  linkedin: "#"
+  youtube: "#"
+
+# Authors (used by post front matter, kept for compatibility with existing posts)
 authors:
   matt:
-    name: MattYGates
+    name: matt
     display_name: Matt Gates
-    gravatar: 
+    avatar: 'assets/images/placeholder-portrait.svg'
     email: matt.gates65@gmail.com
     web: https://unpackleadership.com
-    twitter: 
     description: "Leadership development and intercultural communication. Based in Vancouver, Canada."
+
+# The four content pillars — shown in the homepage topic grid and used as post categories
+topics:
+  - name: "Lead Self"
+    slug: "lead-self"
+    description: "Self-awareness, emotional intelligence, resilience, mindset, and decision-making."
+  - name: "Lead Others"
+    slug: "lead-others"
+    description: "Coaching, feedback, delegation, conflict management, and building trust."
+  - name: "Lead Teams"
+    slug: "lead-teams"
+    description: "Team effectiveness, psychological safety, collaboration, and accountability."
+  - name: "Lead Across Cultures"
+    slug: "lead-across-cultures"
+    description: "Cross-cultural communication, multicultural teamwork, and global leadership."
 
 # Plugins
 plugins:
@@ -28,17 +54,18 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-    
-# Pagination V2
+
+# Pagination V2 (master switch must stay true; only pages with
+# `pagination: enabled: true` in their own front matter actually get paginated — that's /articles/)
 pagination:
   enabled: true
-  per_page: 6
+  per_page: 9
   permalink: '/page:num/'
   title: ':title - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-    
+
 # Other
 markdown: kramdown
 
@@ -48,13 +75,5 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: true
-
-# Adsense (change to "enabled" to activate)
-adsense: "disabled"
-adsense-data-ad-client: ""
-adsense-data-ad-slot: ""
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

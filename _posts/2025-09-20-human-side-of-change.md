@@ -2,8 +2,8 @@
 layout: post
 title: "The Human Side of Organizational Change"
 author: matt
-categories: [Change]
-image: assets/images/org-change.png
+categories: ["Lead Teams"]
+image: assets/images/placeholder-article.svg
 tags: [change, transformation, organizations]
 ---
 

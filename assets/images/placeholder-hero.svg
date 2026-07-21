@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img" aria-label="Illustration placeholder">
+  <rect width="640" height="800" fill="#efece0"/>
+  <rect x="20" y="20" width="600" height="760" rx="16" fill="none" stroke="#023e73" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <!-- person silhouette -->
+  <circle cx="320" cy="330" r="86" fill="#023e73" opacity="0.9"/>
+  <path d="M170 620 C170 480 470 480 470 620 L470 660 L170 660 Z" fill="#023e73" opacity="0.9"/>
+
+  <!-- image icon badge -->
+  <g transform="translate(400,560)">
+    <rect x="0" y="0" width="92" height="72" rx="10" fill="#f5f4f0" stroke="#023e73" stroke-width="3"/>
+    <circle cx="24" cy="24" r="9" fill="#023e73"/>
+    <path d="M6 60 L34 34 L54 52 L66 40 L86 60 Z" fill="#023e73"/>
+  </g>
+
+  <text x="320" y="722" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#023e73">YOUR ILLUSTRATION HERE</text>
+  <text x="320" y="752" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#5b5f66">Replace assets/images/placeholder-hero.svg</text>
+</svg>

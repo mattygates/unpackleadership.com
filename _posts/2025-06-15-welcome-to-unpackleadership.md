@@ -2,8 +2,8 @@
 layout: post
 title: "Welcome to unpackleadership"
 author: matt
-categories: [Leadership]
-image: assets/images/hero-leadership.png
+categories: ["Lead Self"]
+image: assets/images/placeholder-article.svg
 tags: [leadership, intercultural, introduction]
 ---
 
