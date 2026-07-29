@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Matt Gates
+title: Matt Gates
 permalink: /about
 ---
 

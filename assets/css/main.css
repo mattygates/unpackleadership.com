@@ -455,7 +455,7 @@ p { margin: 0 0 1.1em; }
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 56px;
-  padding: 60px 32px 70px;
+  padding: 20px 32px 70px;
   align-items: start;
 }
 
