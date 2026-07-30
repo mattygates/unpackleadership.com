@@ -4,13 +4,13 @@ title: Matt Gates
 permalink: /about
 ---
 
-I work at the intersection of **leadership development and intercultural communication**. My focus is on helping leaders and teams build the capabilities they need to thrive in a complex, connected world — leading themselves, leading others, leading teams, and leading across cultures.
+I help leaders become more thoughtful, adaptable, and effective in how they lead themselves, communicate with others, and navigate the complexity of today's workplace.
 
-With experience spanning multiple cultures and industries, I've seen firsthand that the most effective leaders are the ones who can adapt their approach to different contexts. They listen before they act. They ask questions before they give answers. And they understand that leadership is not about having all the answers — it's about creating the conditions for others to do their best work.
+My work sits at the intersection of leadership development, intercultural communication, coaching, and emerging technology. I design learning experiences, facilitate conversations, and translate research into practical tools leaders can use when giving feedback, managing conflict, building trust, making decisions, leading through change, and working across cultures.
 
-This site is where I share what I'm learning: from research, from practice, and from the leaders I work with every day. My goal is to make complex ideas accessible and to provide frameworks that actually work in the real world.
+I believe effective leadership is not about relying on one preferred style or having all the answers. It is about understanding yourself, reading the context, listening with curiosity, and adapting your approach to the people and situation in front of you.
 
-When I'm not writing or working with leaders, you'll find me reading, researching, and thinking about how to make leadership development more effective across cultural boundaries.
+Unpack Leadership is where I share practical frameworks, research, and reflections from my work in leadership development, adult learning, coaching, and intercultural communication. My goal is to make complex ideas easier to understand—and useful in the moments that matter.
 
 **Based in Vancouver, Canada.**
 
