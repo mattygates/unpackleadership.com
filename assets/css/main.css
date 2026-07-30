@@ -526,14 +526,14 @@ p { margin: 0 0 1.1em; }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
-  border-radius: 9px;
+  border-radius: 8px;
   background: var(--color-primary);
   color: var(--color-surface);
 }
-.connect-icon svg { width: 20px; height: 20px; }
+.connect-icon svg { width: 16px; height: 16px; }
 
 .connect-text { display: flex; flex-direction: column; gap: 2px; }
 .connect-text strong { font-size: 0.95rem; }
