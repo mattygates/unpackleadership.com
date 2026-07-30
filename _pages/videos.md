@@ -28,4 +28,8 @@ videos:
     description: "Why the same five minutes can read as disrespect to one person and a non-issue to another."
     youtube_id: "Tdjn0baJgKc"
     url: "https://www.youtube.com/shorts/Tdjn0baJgKc"
+  - title: "Do You Code-Switch at Work?"
+    description: "How shifting how you speak and show up across settings can be a leadership skill, not a compromise."
+    youtube_id: "YRoMyXe8LBw"
+    url: "https://www.youtube.com/shorts/YRoMyXe8LBw"
 ---
