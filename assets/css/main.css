@@ -494,7 +494,6 @@ p { margin: 0 0 1.1em; }
 .prose pre code { background: none; padding: 0; }
 .prose img { border-radius: var(--radius); margin: 1.4em 0; }
 
-.about-connect .section-eyebrow { margin-bottom: 10px; }
 .about-connect h2 { margin-bottom: 24px; }
 
 .connect-links {
