@@ -20,8 +20,10 @@ videos:
     description: "Why so-called soft skills are some of the hardest and most valuable capabilities a leader can build."
     youtube_id: "vySGy9jioWE"
     url: "https://www.youtube.com/shorts/vySGy9jioWE"
-  - title: "Video coming soon"
-    description: "Placeholder — replace with your first video's title and link."
+  - title: "Why Meetings End in Misunderstanding"
+    description: "The communication gap that quietly derails meetings — and how to close it."
+    youtube_id: "9Ta-W9Ptv6Q"
+    url: "https://www.youtube.com/shorts/9Ta-W9Ptv6Q"
   - title: "Video coming soon"
     description: "Placeholder — replace with your first video's title and link."
 ---
