@@ -32,4 +32,8 @@ videos:
     description: "What where you choose to sit in a room quietly signals about status, comfort, and intent."
     youtube_id: "YRoMyXe8LBw"
     url: "https://www.youtube.com/shorts/YRoMyXe8LBw"
+  - title: "Do You Code-Switch at Work?"
+    description: "How shifting how you speak and show up across settings can be a leadership skill, not a compromise."
+    youtube_id: "GZ_l839slDM"
+    url: "https://www.youtube.com/shorts/GZ_l839slDM"
 ---
