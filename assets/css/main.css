@@ -494,6 +494,51 @@ p { margin: 0 0 1.1em; }
 .prose pre code { background: none; padding: 0; }
 .prose img { border-radius: var(--radius); margin: 1.4em 0; }
 
+.about-connect .section-eyebrow { margin-bottom: 10px; }
+.about-connect h2 { margin-bottom: 24px; }
+
+.connect-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.connect-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1 1 260px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  color: var(--color-text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.connect-link:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 16px 32px -22px rgba(2, 62, 115, 0.4);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.connect-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+.connect-icon svg { width: 20px; height: 20px; }
+
+.connect-text { display: flex; flex-direction: column; gap: 2px; }
+.connect-text strong { font-size: 0.95rem; }
+.connect-text small { font-size: 0.82rem; color: var(--color-text-muted); }
+
 /* ---------------------------------------------------------------------- */
 /* Single article page                                                     */
 /* ---------------------------------------------------------------------- */

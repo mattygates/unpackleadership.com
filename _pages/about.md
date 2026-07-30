@@ -13,5 +13,3 @@ I believe effective leadership is not about relying on one preferred style or ha
 Unpack Leadership is where I share practical frameworks, research, and reflections from my work in leadership development, adult learning, coaching, and intercultural communication. My goal is to make complex ideas easier to understand—and useful in the moments that matter.
 
 **Based in Vancouver, Canada.**
-
-[Connect on LinkedIn]({{ site.social.linkedin }})
