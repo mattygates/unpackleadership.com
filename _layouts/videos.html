@@ -15,12 +15,21 @@ layout: default
     <div class="video-grid">
       {% for video in page.videos %}
       <div class="video-card">
+        {% if video.youtube_id %}
+        <div class="video-card-thumb">
+          <iframe src="https://www.youtube.com/embed/{{ video.youtube_id }}" title="{{ video.title }}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        {% else %}
         <a class="video-card-thumb" href="{{ video.url | default: '#' }}">
           <img src="{{ site.baseurl }}/assets/images/placeholder-video.svg" alt="Video placeholder: {{ video.title }}">
         </a>
+        {% endif %}
         <div class="video-card-body">
           <h3>{{ video.title }}</h3>
           <p>{{ video.description }}</p>
+          {% if video.url %}
+          <a class="view-all" href="{{ video.url }}" target="_blank" rel="noopener">Watch on YouTube →</a>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
