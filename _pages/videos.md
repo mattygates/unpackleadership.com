@@ -24,6 +24,8 @@ videos:
     description: "The communication gap that quietly derails meetings — and how to close it."
     youtube_id: "9Ta-W9Ptv6Q"
     url: "https://www.youtube.com/shorts/9Ta-W9Ptv6Q"
-  - title: "Video coming soon"
-    description: "Placeholder — replace with your first video's title and link."
+  - title: "Five Minutes Late: Disrespect or Not?"
+    description: "Why the same five minutes can read as disrespect to one person and a non-issue to another."
+    youtube_id: "Tdjn0baJgKc"
+    url: "https://www.youtube.com/shorts/Tdjn0baJgKc"
 ---
