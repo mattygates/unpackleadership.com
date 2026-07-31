@@ -23,8 +23,9 @@ layout: default
     </div>
 
     {% if page.image %}
+    {% assign image_prefix = page.image | slice: 0 %}
     <div class="article-featured-image">
-      <img src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+      <img src="{% if page.image contains '://' %}{{ page.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
     </div>
     {% endif %}
 
