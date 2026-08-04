@@ -41,16 +41,16 @@ authors:
 topics:
   - name: "Lead Self"
     slug: "lead-self"
-    description: "Self-awareness, emotional intelligence, resilience, mindset, and decision-making."
+    description: "Leadership self-awareness, emotional intelligence, resilience, decision-making, and AI literacy."
   - name: "Lead Others"
     slug: "lead-others"
-    description: "Coaching, feedback, delegation, conflict management, and building trust."
+    description: "Leadership coaching, feedback, delegation, conflict, accountability, and trust."
   - name: "Lead Teams"
     slug: "lead-teams"
-    description: "Team effectiveness, psychological safety, collaboration, and accountability."
+    description: "Team effectiveness, psychological safety, collaboration, accountability, alignment, and human-AI coordination."
   - name: "Lead Across Cultures"
     slug: "lead-across-cultures"
-    description: "Cross-cultural communication, multicultural teamwork, and global leadership."
+    description: "Cross-cultural communication, intercultural leadership, multicultural teams, and global leadership."
 
 # Plugins
 plugins:
