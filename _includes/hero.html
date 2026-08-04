@@ -11,7 +11,21 @@
 
       <p class="hero-bio">{{ site.author.bio }}</p>
 
-      <a class="btn" href="{{ site.social.linkedin }}">Connect on LinkedIn</a>
+      <div class="hero-social" aria-label="Social links">
+        <a class="social-button social-button-linkedin" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a class="social-button social-button-youtube" href="{{ site.social.youtube }}" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M23.5 6.2a3.02 3.02 0 0 0-2.13-2.14C19.49 3.56 12 3.56 12 3.56s-7.49 0-9.37.5A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.13 2.14c1.88.5 9.37.5 9.37.5s7.49 0 9.37-.5a3.02 3.02 0 0 0 2.13-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.55 15.56V8.44L15.82 12l-6.27 3.56z"/>
+          </svg>
+          <span>YouTube</span>
+        </a>
+      </div>
     </div>
 
     <div class="hero-figure">
