@@ -1,0 +1,44 @@
+# Unpack Leadership
+
+Unpack Leadership is a leadership development and intercultural communication site by Matt Gates, based in Vancouver, Canada.
+
+The site covers leadership development, cross-cultural communication, leadership coaching, executive coaching, feedback, accountability, multicultural teams, global teams, and AI literacy for leaders.
+
+## Primary Entity
+
+Matt Gates is a Vancouver-based leadership development consultant, coach, and intercultural communication specialist. He writes about practical leadership, coaching conversations, communication across cultures, feedback, accountability, and how leaders can work well with people and AI.
+
+## Key Pages
+
+- Home: https://unpackleadership.com/
+- About Matt Gates: https://unpackleadership.com/about
+- Articles: https://unpackleadership.com/articles/
+- Videos: https://unpackleadership.com/videos
+- RSS: https://unpackleadership.com/feed.xml
+- Sitemap: https://unpackleadership.com/sitemap.xml
+
+## Topic Pages
+
+- Lead Self: https://unpackleadership.com/topics/lead-self/
+- Lead Others: https://unpackleadership.com/topics/lead-others/
+- Lead Teams: https://unpackleadership.com/topics/lead-teams/
+- Lead Across Cultures: https://unpackleadership.com/topics/lead-across-cultures/
+
+## Current Article Themes
+
+- AI literacy for leaders
+- Coordinating people and AI
+- Feedback, accountability, and coaching conversations
+- Cross-cultural feedback
+- Multicultural and global teams
+- Shared work norms across cultures and geographies
+
+## External Profiles
+
+- LinkedIn: https://www.linkedin.com/in/mattygates/
+- YouTube: https://www.youtube.com/@PeakPotential-Consulting/shorts
+- Peak Potential Consulting: https://www.peakpotentialconsulting.com/
+
+## Suggested Summary
+
+Unpack Leadership helps leaders improve how they lead themselves, communicate with others, coach teams, give feedback, work across cultures, and adapt to AI in the workplace.

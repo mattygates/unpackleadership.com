@@ -10,6 +10,48 @@
 
 {% seo %}
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/about#person",
+  "name": "Matt Gates",
+  "url": "{{ site.url }}/about",
+  "image": "{{ site.url }}/assets/images/Matt_aboutpic.png",
+  "jobTitle": [
+    "Leadership Development Consultant",
+    "Leadership Coach",
+    "Intercultural Communication Specialist"
+  ],
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Vancouver, Canada"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Peak Potential Consulting",
+    "url": "{{ site.social.ppc_website }}",
+    "sameAs": "{{ site.social.ppc_linkedin }}"
+  },
+  "sameAs": [
+    "{{ site.social.linkedin }}",
+    "{{ site.social.youtube }}",
+    "{{ site.social.ppc_website }}"
+  ],
+  "knowsAbout": [
+    "Leadership development",
+    "Cross-cultural communication",
+    "Intercultural communication",
+    "Leadership coaching",
+    "Executive coaching",
+    "Feedback and accountability",
+    "Multicultural teams",
+    "Global teams",
+    "AI literacy for leaders"
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital@1&display=swap" rel="stylesheet">
