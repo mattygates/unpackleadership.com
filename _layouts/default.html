@@ -42,9 +42,20 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-bottom">
-      <span>© {{ site.time | date: "%Y" }} {{ site.name }}</span>
-      <span>{{ site.author.location }}</span>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/articles/">Articles</a>
+      <a href="{{ site.baseurl }}/about">About</a>
+      <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+      <a href="{{ site.social.ppc_website }}" target="_blank" rel="noopener">Peak Potential Consulting</a>
+    </nav>
+
+    <div class="footer-identity">
+      <span>Matt Gates</span>
+      <span>Vancouver</span>
+      <span>Lead Yourself</span>
+      <span>Lead Others</span>
+      <span>Lead Across Cultures</span>
     </div>
   </div>
 </footer>
