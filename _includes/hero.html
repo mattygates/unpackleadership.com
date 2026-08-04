@@ -9,7 +9,7 @@
 
       <p class="hero-roles">{{ site.author.roles_line1 }}<br>{{ site.author.roles_line2 }}</p>
 
-      <p class="hero-bio">{{ site.author.bio }}</p>
+      <p class="hero-bio">{{ page.hero_bio | default: site.author.bio }}</p>
 
       <div class="hero-social" aria-label="Social links">
         <a class="social-button social-button-linkedin" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">
