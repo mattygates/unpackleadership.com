@@ -6,9 +6,12 @@
 
 <link rel="icon" href="{{ site.baseurl }}/{{ site.favicon }}">
 
-<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+<title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords | join: ', ' }}">
+{% endif %}
 
-{% seo %}
+{% seo title=false %}
 
 <script type="application/ld+json">
 {
