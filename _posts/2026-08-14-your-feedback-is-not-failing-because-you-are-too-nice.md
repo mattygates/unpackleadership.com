@@ -3,7 +3,7 @@ layout: post
 title: "Your Feedback Is Not Failing Because You Are Too Nice"
 author: matt
 categories: ["Lead Teams"]
-image: /assets/images/feedback-accountability.png
+image: /assets/images/feedback-is-not-failing.png
 tags: [feedback, accountability, team-leadership]
 ---
 

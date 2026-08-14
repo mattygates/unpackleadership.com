@@ -2,7 +2,7 @@
 layout: post
 title: "When Multicultural Teams Struggle, Culture Isn’t the Problem—Unspoken Assumptions Are."
 author: matt
-categories: ["Lead Teams"]
+categories: ["Lead Across Cultures"]
 image: /assets/images/team-meeting.png
 tags: [multicultural-teams, intercultural-communication, assumptions]
 ---
