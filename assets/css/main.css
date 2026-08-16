@@ -436,10 +436,12 @@ p { margin: 0 0 1.1em; }
   margin-right: auto;
 }
 
+.home-video-player iframe,
 .home-video-player video {
   display: block;
   width: 100%;
   aspect-ratio: 16/9;
+  border: 0;
   background: #10263a;
 }
 
