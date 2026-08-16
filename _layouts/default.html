@@ -72,8 +72,8 @@
 
     <nav class="main-nav" aria-label="Primary">
       <a href="{{ site.baseurl }}/"{% if page.url == "/" %} class="active"{% endif %}>Home</a>
-      <a href="{{ site.baseurl }}/articles/"{% if page.url contains "/articles" %} class="active"{% endif %}>Articles</a>
       <a href="{{ site.baseurl }}/about"{% if page.url contains "/about" %} class="active"{% endif %}>About</a>
+      <a href="{{ site.baseurl }}/articles/"{% if page.url contains "/articles" %} class="active"{% endif %}>Articles</a>
       <a href="{{ site.baseurl }}/videos"{% if page.url contains "/videos" %} class="active"{% endif %}>Videos</a>
     </nav>
 
@@ -89,8 +89,8 @@
   <div class="wrap">
     <nav class="footer-links" aria-label="Footer navigation">
       <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/articles/">Articles</a>
       <a href="{{ site.baseurl }}/about">About</a>
+      <a href="{{ site.baseurl }}/articles/">Articles</a>
       <a href="{{ site.baseurl }}/feed.xml">RSS</a>
       <a href="{{ site.social.ppc_website }}" target="_blank" rel="noopener">Peak Potential Consulting</a>
     </nav>

@@ -431,6 +431,9 @@ p { margin: 0 0 1.1em; }
   background: var(--color-surface);
   box-shadow: 0 20px 45px -25px rgba(2, 62, 115, 0.35);
   margin-bottom: 26px;
+  max-width: 67%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-video-player video {
@@ -801,6 +804,7 @@ p { margin: 0 0 1.1em; }
   .about-teaser .wrap { grid-template-columns: 1fr; }
   .about-page .wrap { grid-template-columns: 1fr; }
   .about-page-figure { position: static; max-width: 320px; }
+  .home-video-player { max-width: 100%; }
 }
 
 @media (max-width: 640px) {
