@@ -1,9 +1,16 @@
 ---
 layout: videos
 title: Videos
-description: "Leadership talks, coaching frameworks, and practical takes on leading across cultures. New videos drop regularly — this page is placeholder content until real videos are added."
+description: "Short leadership videos from Matt Gates on feedback, coaching, cross-cultural communication, psychological safety, listening, meetings, and practical ways to lead yourself, lead others, and lead across cultures."
 permalink: /videos
 videos:
+  - title: "Welcome to Unpack Leadership"
+    description: "A short introduction to Unpack Leadership and the practical leadership ideas I share on leading yourself, leading others, and leading across cultures."
+    youtube_id: "4oOylVOo6ps"
+    url: "https://youtu.be/4oOylVOo6ps"
+    upload_date: "2026-08-16T13:43:00-07:00"
+    duration: "PT2M3S"
+    featured: true
   - title: "Multitasking Kills True Listening"
     description: "A quick look at why divided attention undermines real listening — and what to do instead."
     youtube_id: "_-FtsqvWimA"

@@ -419,6 +419,16 @@ p { margin: 0 0 1.1em; }
   margin-bottom: 24px;
 }
 
+.videos-page-intro {
+  display: block;
+  max-width: 760px;
+}
+
+.videos-page-intro p {
+  color: var(--color-text-muted);
+  margin: 10px 0 0;
+}
+
 .home-video .hero-bio {
   max-width: 680px;
   margin-bottom: 26px;
