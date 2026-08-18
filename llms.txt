@@ -11,9 +11,9 @@ Matt Gates is a Vancouver-based leadership development consultant, coach, and in
 ## Key Pages
 
 - Home: https://unpackleadership.com/
-- About Matt Gates: https://unpackleadership.com/about
+- About Matt Gates: https://unpackleadership.com/about/
 - Articles: https://unpackleadership.com/articles/
-- Videos: https://unpackleadership.com/videos
+- Videos: https://unpackleadership.com/videos/
 - RSS: https://unpackleadership.com/feed.xml
 - Sitemap: https://unpackleadership.com/sitemap.xml
 

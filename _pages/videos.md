@@ -2,7 +2,7 @@
 layout: videos
 title: Videos
 description: "Short leadership videos from Matt Gates on feedback, coaching, cross-cultural communication, psychological safety, listening, meetings, and practical ways to lead yourself, lead others, and lead across cultures."
-permalink: /videos
+permalink: /videos/
 videos:
   - title: "Welcome to Unpack Leadership"
     description: "A short introduction to Unpack Leadership and the practical leadership ideas I share on leading yourself, leading others, and leading across cultures."

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Matt Gates
-permalink: /about
+permalink: /about/
 description: "Matt Gates is a Vancouver-based leadership development consultant, coach, and intercultural communication specialist writing about leadership development, cross-cultural communication, coaching, feedback, multicultural teams, and AI literacy for leaders."
 ---
 
