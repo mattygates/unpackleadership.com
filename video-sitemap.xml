@@ -2,35 +2,34 @@
 layout: null
 permalink: /video-sitemap.xml
 ---
-
-{% assign videos_page = site.pages | where: "permalink", "/videos/" | first %}
-{% assign videos = videos_page.videos %}
+{%- assign videos_page = site.pages | where: "permalink", "/videos/" | first -%}
+{%- assign videos = videos_page.videos -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-{% for video in videos %}
-  {% assign dur_sec = video.duration | replace: "PT", "" | replace: "H", ":" | replace: "M", ":" | replace: "S", "" | split: ":" %}
-  {% if dur_sec.size == 3 %}
-    {% assign video_seconds = dur_sec[0] | times: 3600 | plus: dur_sec[1] | times: 60 | plus: dur_sec[2] %}
-  {% elsif dur_sec.size == 2 %}
-    {% assign video_seconds = dur_sec[0] | times: 60 | plus: dur_sec[1] %}
-  {% elsif dur_sec.size == 1 %}
-    {% assign video_seconds = dur_sec[0] | plus: 0 %}
-  {% else %}
-    {% assign video_seconds = 30 %}
-  {% endif %}
+{%- for video in videos -%}
+  {%- assign dur_sec = video.duration | replace: "PT", "" | replace: "H", ":" | replace: "M", ":" | replace: "S", "" | split: ":" -%}
+  {%- if dur_sec.size == 3 -%}
+    {%- assign video_seconds = dur_sec[0] | times: 3600 | plus: dur_sec[1] | times: 60 | plus: dur_sec[2] -%}
+  {%- elsif dur_sec.size == 2 -%}
+    {%- assign video_seconds = dur_sec[0] | times: 60 | plus: dur_sec[1] -%}
+  {%- elsif dur_sec.size == 1 -%}
+    {%- assign video_seconds = dur_sec[0] | plus: 0 -%}
+  {%- else -%}
+    {%- assign video_seconds = 30 -%}
+  {%- endif -%}
   <url>
     <loc>https://unpackleadership.com/videos/</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/{{ video.youtube_id }}/hqdefault.jpg</video:thumbnail_loc>
       <video:title><![CDATA[{{ video.title }}]]></video:title>
       <video:description><![CDATA[{{ video.description }}]]></video:description>
-      {% if video.upload_date %}<video:publication_date>{{ video.upload_date }}</video:publication_date>{% endif %}
+      {%- if video.upload_date -%}<video:publication_date>{{ video.upload_date }}</video:publication_date>{%- endif -%}
       <video:duration>{{ video_seconds }}</video:duration>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/{{ video.youtube_id }}</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
       <video:uploader info="https://www.youtube.com/@PeakPotential-Consulting">Peak Potential Consulting</video:uploader>
     </video:video>
   </url>
-{% endfor %}
+{%- endfor -%}
 </urlset>
