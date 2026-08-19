@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unpackleadership.com/sitemap.xml
+Sitemap: https://unpackleadership.com/video-sitemap.xml

@@ -44,26 +44,30 @@ layout: default
   </div>
 </section>
 
-{% assign structured_videos = page.videos | where_exp: "video", "video.upload_date and video.youtube_id" %}
+{% assign structured_videos = page.videos | where_exp: "video", "video.youtube_id" %}
 {% if structured_videos.size > 0 %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "itemListElement": [
+  "@type": "VideoGallery",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "about": {{ page.description | jsonify }},
+  "video": [
     {% for video in structured_videos %}
     {
-      "@type": "ListItem",
-      "position": {{ forloop.index }},
-      "item": {
-        "@type": "VideoObject",
-        "name": {{ video.title | jsonify }},
-        "description": {{ video.description | jsonify }},
-        "thumbnailUrl": "https://i.ytimg.com/vi/{{ video.youtube_id }}/hqdefault.jpg",
-        "uploadDate": "{{ video.upload_date }}",
-        {% if video.duration %}"duration": "{{ video.duration }}",{% endif %}
-        "embedUrl": "https://www.youtube.com/embed/{{ video.youtube_id }}",
-        "url": "{{ video.url }}"
+      "@type": "VideoObject",
+      "name": {{ video.title | jsonify }},
+      "description": {{ video.description | jsonify }},
+      "thumbnailUrl": "https://i.ytimg.com/vi/{{ video.youtube_id }}/hqdefault.jpg",
+      {% if video.upload_date %}"uploadDate": "{{ video.upload_date }}",{% endif %}
+      {% if video.duration %}"duration": "{{ video.duration }}",{% endif %}
+      "embedUrl": "https://www.youtube.com/embed/{{ video.youtube_id }}",
+      "publication": {
+        "@type": "BroadcastEvent",
+        "isLiveBroadcast": false
       }
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
