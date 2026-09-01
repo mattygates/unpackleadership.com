@@ -3,7 +3,7 @@ layout: post
 title: "Everyone Said Yes to the Plan. So Why Hasn't It Started?"
 author: matt
 categories: ["Lead Across Cultures"]
-image: /assets/images/everyone-said-yes-to-the-plan.png
+image: /assets/images/everyone-said-yes-to-the-plan.jpg
 image_alt: "A leader presenting a plan to a team seated around a boardroom table, with a city skyline in the background."
 tags: [cross-cultural-leadership, decision-making, global-teams, power-distance, intercultural-communication]
 ---

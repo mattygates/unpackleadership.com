@@ -31,8 +31,15 @@ layout: default
 
     {% if page.image %}
     {% assign image_prefix = page.image | slice: 0 %}
+    {% assign image_ext = page.image | split: '.' | last %}
     <div class="article-featured-image">
+      {% if image_prefix == '/' and image_ext == 'jpg' %}
+        {% assign img_base = page.image | remove: '.jpg' %}
+        {% assign img_alt = page.image_alt | default: page.title %}
+        {% include responsive-image.html base=img_base alt=img_alt sizes="(min-width: 820px) 780px, 100vw" width="1200" height="675" fetchpriority="high" %}
+      {% else %}
       <img src="{% if page.image contains '://' %}{{ page.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.image_alt | default: page.title }}">
+      {% endif %}
     </div>
     {% endif %}
 

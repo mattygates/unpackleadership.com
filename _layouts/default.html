@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JCSG9ZY27"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4JCSG9ZY27');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/lora-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <link rel="icon" href="{{ site.baseurl }}/{{ site.favicon }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
@@ -24,11 +18,17 @@
 {% capture seo_meta %}{% seo title=false %}{% endcapture %}
 {{ seo_meta | strip_json_ld }}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital@1&display=swap" rel="stylesheet">
-
 <link href="{{ site.baseurl }}/assets/css/main.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JCSG9ZY27"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4JCSG9ZY27');
+</script>
 </head>
 <body>
 

@@ -1,8 +1,15 @@
 {% assign topic = include.post.categories[0] %}
 {% assign image_prefix = include.post.image | slice: 0 %}
+{% assign image_ext = include.post.image | split: '.' | last %}
 <article class="article-card">
   <a class="article-card-thumb" href="{{ site.baseurl }}{{ include.post.url }}">
-    <img src="{% if include.post.image contains '://' %}{{ include.post.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ include.post.image }}{% else %}{{ site.baseurl }}/{{ include.post.image | default: 'assets/images/placeholder-article.svg' }}{% endif %}" alt="{{ include.post.title }}" loading="lazy">
+    {% if include.post.image and image_prefix == '/' and image_ext == 'jpg' %}
+      {% assign img_base = include.post.image | remove: '.jpg' %}
+      {% assign img_alt = include.post.image_alt | default: include.post.title %}
+      {% include responsive-image.html base=img_base alt=img_alt sizes="(max-width: 640px) 100vw, (max-width: 920px) 50vw, 33vw" width="1200" height="675" loading="lazy" %}
+    {% else %}
+    <img src="{% if include.post.image contains '://' %}{{ include.post.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ include.post.image }}{% else %}{{ site.baseurl }}/{{ include.post.image | default: 'assets/images/placeholder-article.svg' }}{% endif %}" alt="{{ include.post.image_alt | default: include.post.title }}" loading="lazy">
+    {% endif %}
   </a>
   <div class="article-card-body">
     {% if topic %}

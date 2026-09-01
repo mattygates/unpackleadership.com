@@ -3,6 +3,25 @@
    Palette: navy #023e73 on cream #f5f4f0 (swap variables below to re-theme)
    ========================================================================== */
 
+/* Self-hosted fonts (latin subset only — the same files Google Fonts would
+   have served, just same-origin so there's no extra DNS/connect/TLS round
+   trip to fonts.googleapis.com/fonts.gstatic.com blocking first paint).
+   Inter ships as a variable font, so one file covers weights 400–800. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/inter-variable-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lora-italic-latin.woff2") format("woff2");
+}
+
 :root {
   --color-bg: #f5f4f0;
   --color-surface: #ffffff;
@@ -248,8 +267,8 @@ p { margin: 0 0 1.1em; }
 
 .social-button-linkedin { background: #0a66c2; }
 .social-button-linkedin:hover { background: #085aa8; }
-.social-button-youtube { background: #ff0000; }
-.social-button-youtube:hover { background: #d90000; }
+.social-button-youtube { background: #d90000; }
+.social-button-youtube:hover { background: #b80000; }
 
 .hero-figure {
   border: 1px solid var(--color-border);
