@@ -3,7 +3,8 @@ layout: post
 title: "When Feedback Doesn't Land, Culture May Be Part of the Conversation"
 author: matt
 categories: ["Lead Across Cultures"]
-image: /assets/images/one-on-one-feedback.png
+image: /assets/images/one-on-one-feedback.jpg
+image_alt: "Two colleagues having a one-on-one conversation over a laptop in an office."
 tags: [feedback, intercultural-communication, multicultural-teams]
 ---
 

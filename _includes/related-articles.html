@@ -1,0 +1,21 @@
+{% comment %}
+  Related-reading module for article pages: 2-4 other posts in the same
+  leadership pillar, plus a link back to the pillar hub as a broader
+  resource. Renders nothing if there are no other posts in the category,
+  rather than padding with unrelated posts.
+{% endcomment %}
+{% assign topic = page.categories[0] %}
+{% assign related = site.categories[topic] | where_exp: "post", "post.url != page.url" | slice: 0, 4 %}
+{% if related.size > 0 %}
+<section class="related-articles">
+  <div class="section-head">
+    <h2>Related Reading in {{ topic }}</h2>
+    <a class="view-all" href="{{ site.baseurl }}/topics/{{ topic | slugify }}/">See all {{ topic }} articles →</a>
+  </div>
+  <div class="card-grid">
+    {% for post in related %}
+      {% include postbox.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

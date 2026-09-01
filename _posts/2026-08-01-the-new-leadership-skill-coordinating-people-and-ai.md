@@ -3,7 +3,8 @@ layout: post
 title: "The New Leadership Skill: Coordinating People and AI"
 author: matt
 categories: ["Lead Teams"]
-image: /assets/images/ai-discussion.png
+image: /assets/images/ai-discussion.jpg
+image_alt: "A leader discussing a dashboard on a laptop with three colleagues around a table, city skyline in the background."
 tags: [ai, human-ai-collaboration, team-leadership]
 ---
 

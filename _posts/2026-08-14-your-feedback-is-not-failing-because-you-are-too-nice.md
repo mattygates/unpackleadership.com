@@ -6,7 +6,8 @@ description: "Difficult feedback conversations often fail because they turn into
 keywords: [difficult feedback conversations, how to give feedback as a manager, feedback conversation framework, manager feedback training, forward-looking feedback, performance feedback research]
 author: matt
 categories: ["Lead Teams"]
-image: /assets/images/feedback-is-not-failing-two.png
+image: /assets/images/feedback-is-not-failing-two.jpg
+image_alt: "A manager giving performance feedback to an employee, with a performance dashboard shown on a screen behind them."
 tags: [feedback, accountability, team-leadership]
 ---
 

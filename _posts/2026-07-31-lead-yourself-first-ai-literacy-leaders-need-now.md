@@ -3,7 +3,8 @@ layout: post
 title: "Lead Yourself First: The AI Literacy Leaders Need Now"
 author: matt
 categories: ["Lead Self"]
-image: /assets/images/lead-yourself-first-home-office-ai-2026.png
+image: /assets/images/lead-yourself-first-home-office-ai-2026.jpg
+image_alt: "A leader working at a home office desk, reviewing a data dashboard on a monitor while holding a coffee mug."
 tags: [ai-literacy, leadership, self-leadership]
 ---
 

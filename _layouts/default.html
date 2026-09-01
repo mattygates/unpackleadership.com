@@ -14,55 +14,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="icon" href="{{ site.baseurl }}/{{ site.favicon }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
 
 <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
 {% endif %}
 
-{% seo title=false %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "{{ site.url }}/about/#person",
-  "name": "Matt Gates",
-  "url": "{{ site.url }}/about/",
-  "image": "{{ site.url }}/assets/images/matt-gates-office-vancouver-2026.png",
-  "jobTitle": [
-    "Leadership Development Consultant",
-    "Leadership Coach",
-    "Intercultural Communication Specialist"
-  ],
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Vancouver, Canada"
-  },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Peak Potential Consulting",
-    "url": "{{ site.social.ppc_website }}",
-    "sameAs": "{{ site.social.ppc_linkedin }}"
-  },
-  "sameAs": [
-    "{{ site.social.linkedin }}",
-    "{{ site.social.youtube }}",
-    "{{ site.social.ppc_website }}"
-  ],
-  "knowsAbout": [
-    "Leadership development",
-    "Cross-cultural communication",
-    "Intercultural communication",
-    "Leadership coaching",
-    "Executive coaching",
-    "Feedback and accountability",
-    "Multicultural teams",
-    "Global teams",
-    "AI literacy for leaders"
-  ]
-}
-</script>
+{% capture seo_meta %}{% seo title=false %}{% endcapture %}
+{{ seo_meta | strip_json_ld }}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,9 +67,9 @@
     <div class="footer-identity">
       <span>Matt Gates</span>
       <span>Vancouver</span>
-      <span>Lead Yourself</span>
-      <span>Lead Others</span>
-      <span>Lead Across Cultures</span>
+      {% for topic in site.topics %}
+      <span>{{ topic.name }}</span>
+      {% endfor %}
     </div>
   </div>
 </footer>

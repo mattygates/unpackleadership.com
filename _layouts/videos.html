@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div class="wrap">
+  {% include breadcrumbs.html trail="Home|/" current="Videos" %}
+</div>
+
 <div class="page-header">
   <div class="wrap">
     <span class="section-eyebrow">Videos</span>
@@ -75,3 +79,24 @@ layout: default
 }
 </script>
 {% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% include json-ld-organization.html %},
+    {% include json-ld-person.html %},
+    {% include json-ld-website.html %},
+    {
+      "@type": "CollectionPage",
+      "@id": "{{ page.url | absolute_url }}#collectionpage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumb" }
+    },
+    {% include breadcrumb-jsonld.html trail="Home|/" current="Videos" page_url=page.url %}
+  ]
+}
+</script>

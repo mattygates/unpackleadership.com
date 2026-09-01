@@ -1,0 +1,29 @@
+{% comment %}
+  Renders the BreadcrumbList JSON-LD object matching breadcrumbs.html.
+  Usage: {% include breadcrumb-jsonld.html trail="Home|/,Articles|/articles/" current="Article Title" page_url=page.url %}
+  Takes the same trail/current params so the visible trail and the
+  structured data can never describe a different hierarchy.
+{% endcomment %}
+{% assign crumbs = include.trail | split: "," %}
+{% assign page_url = include.page_url | absolute_url %}
+{
+  "@type": "BreadcrumbList",
+  "@id": "{{ page_url }}#breadcrumb",
+  "itemListElement": [
+    {% for crumb in crumbs %}
+      {% assign parts = crumb | split: "|" %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "name": {{ parts[0] | jsonify }},
+        "item": "{{ site.url }}{{ parts[1] }}"
+      },
+    {% endfor %}
+    {
+      "@type": "ListItem",
+      "position": {{ crumbs.size | plus: 1 }},
+      "name": {{ include.current | jsonify }},
+      "item": "{{ page_url }}"
+    }
+  ]
+}

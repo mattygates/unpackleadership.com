@@ -1,6 +1,6 @@
 # Site
 name: "Unpack Leadership"
-title: "Lead Yourself. Lead Others. Lead Teams. Lead Across Cultures."
+title: "Unpack Leadership"
 description: "Leadership development and intercultural communication insights from Matt Gates."
 url: "https://unpackleadership.com"
 logo: 'assets/images/logo-placeholder.svg'
@@ -32,7 +32,7 @@ authors:
   matt:
     name: matt
     display_name: Matt Gates
-    avatar: 'assets/images/matt-gates-office-vancouver-2026.png'
+    avatar: 'assets/images/matt-gates-office-vancouver-2026.jpg'
     email: matt.gates65@gmail.com
     web: https://unpackleadership.com
     description: "Leadership development and intercultural communication. Based in Vancouver, Canada."

@@ -4,6 +4,7 @@ title: "Nice Isn't Weak: Give Feedback Without Losing Accountability"
 author: matt
 categories: ["Lead Others"]
 image: /assets/images/nice-isnt-weak-feedback-with-employee-2026.jpg
+image_alt: "A manager giving feedback to an employee across a small table in an open office."
 tags: [feedback, accountability, leadership]
 ---
 

@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div class="wrap">
+  {% include breadcrumbs.html trail="Home|/" current="About" %}
+</div>
+
 <div class="page-header">
   <div class="wrap">
     <h1>{{ page.title }}</h1>
@@ -12,7 +16,7 @@ layout: default
 <div class="about-page">
   <div class="wrap">
     <div class="about-page-figure">
-      <img src="{{ site.baseurl }}/assets/images/matt-gates-office-vancouver-2026.png" alt="Matt Gates in his Vancouver office">
+      <img src="{{ site.baseurl }}/assets/images/matt-gates-office-vancouver-2026.jpg" alt="Matt Gates in his Vancouver office">
     </div>
 
     <div class="prose">
@@ -58,3 +62,25 @@ layout: default
     </div>
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% include json-ld-organization.html %},
+    {% include json-ld-person.html %},
+    {% include json-ld-website.html %},
+    {
+      "@type": "ProfilePage",
+      "@id": "{{ page.url | absolute_url }}#profilepage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "mainEntity": { "@id": "{{ site.url }}/about/#person" },
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumb" }
+    },
+    {% include breadcrumb-jsonld.html trail="Home|/" current="About" page_url=page.url %}
+  ]
+}
+</script>

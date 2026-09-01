@@ -1,0 +1,18 @@
+{% comment %}
+  Renders a visible breadcrumb trail.
+  Usage: {% include breadcrumbs.html trail="Home|/,Articles|/articles/" current="Article Title" %}
+  `trail` is a comma-separated list of "Name|/url/" pairs for every crumb
+  before the current page. `current` is the current page's own label (not
+  a link). Keep in sync with breadcrumb-jsonld.html, which takes the same
+  params and must describe the same trail.
+{% endcomment %}
+{% assign crumbs = include.trail | split: "," %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    {% for crumb in crumbs %}
+      {% assign parts = crumb | split: "|" %}
+      <li><a href="{{ site.baseurl }}{{ parts[1] }}">{{ parts[0] }}</a></li>
+    {% endfor %}
+    <li aria-current="page">{{ include.current }}</li>
+  </ol>
+</nav>

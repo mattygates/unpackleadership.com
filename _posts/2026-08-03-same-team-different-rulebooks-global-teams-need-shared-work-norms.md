@@ -3,7 +3,8 @@ layout: post
 title: "Same Team, Different Rulebooks: Why Global Teams Need Shared Work Norms"
 author: matt
 categories: ["Lead Across Cultures"]
-image: /assets/images/shared-team-norms-global-teams-2026.png
+image: /assets/images/shared-team-norms-global-teams-2026.jpg
+image_alt: "A leader facilitating a hybrid meeting with in-room colleagues and remote teammates joining by video from different time zones."
 tags: [global-teams, intercultural-communication, team-norms]
 ---
 

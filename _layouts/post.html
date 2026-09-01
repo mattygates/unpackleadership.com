@@ -2,11 +2,18 @@
 layout: default
 ---
 
+{% assign topic = page.categories[0] %}
+{% assign topic_slug = topic | slugify %}
+{% assign breadcrumb_trail = "Home|/,Articles|/articles/" | append: "," | append: topic | append: "|/topics/" | append: topic_slug | append: "/" %}
+
+<div class="wrap">
+  {% include breadcrumbs.html trail=breadcrumb_trail current=page.title %}
+</div>
+
 <article class="article-page">
   <div class="wrap">
 
     <div class="article-meta-top">
-      {% assign topic = page.categories[0] %}
       {% if topic %}
       <a class="tag-pill" href="{{ site.baseurl }}/topics/{{ topic | slugify }}/">{{ topic }}</a>
       {% endif %}
@@ -25,7 +32,7 @@ layout: default
     {% if page.image %}
     {% assign image_prefix = page.image | slice: 0 %}
     <div class="article-featured-image">
-      <img src="{% if page.image contains '://' %}{{ page.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+      <img src="{% if page.image contains '://' %}{{ page.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.image_alt | default: page.title }}">
     </div>
     {% endif %}
 
@@ -53,3 +60,48 @@ layout: default
 
   </div>
 </article>
+
+<div class="wrap">
+  {% include related-articles.html %}
+</div>
+
+{% assign article_description = page.description | default: page.excerpt | strip_html | normalize_whitespace | truncatewords: 40 %}
+{% assign article_image = page.image | default: site.author.avatar %}
+{% assign image_prefix = article_image | slice: 0 %}
+{% assign article_image_url = "" %}
+{% if article_image contains '://' %}
+  {% assign article_image_url = article_image %}
+{% elsif image_prefix == '/' %}
+  {% assign article_image_url = site.url | append: article_image %}
+{% else %}
+  {% assign article_image_url = site.url | append: '/' | append: article_image %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% include json-ld-organization.html %},
+    {% include json-ld-person.html %},
+    {% include json-ld-website.html %},
+    {
+      "@type": "BlogPosting",
+      "@id": "{{ page.url | absolute_url }}#article",
+      "url": "{{ page.url | absolute_url }}",
+      "mainEntityOfPage": { "@id": "{{ page.url | absolute_url }}" },
+      "headline": {{ page.title | jsonify }},
+      "description": {{ article_description | jsonify }},
+      "image": {{ article_image_url | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "author": { "@id": "{{ site.url }}/about/#person" },
+      "publisher": { "@id": "{{ site.url }}/#organization" },
+      {% if topic %}"articleSection": {{ topic | jsonify }},{% endif %}
+      {% if page.tags.size > 0 %}"keywords": {{ page.tags | join: ", " | jsonify }},{% endif %}
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumb" }
+    },
+    {% include breadcrumb-jsonld.html trail=breadcrumb_trail current=page.title page_url=page.url %}
+  ]
+}
+</script>

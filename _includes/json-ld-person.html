@@ -1,0 +1,38 @@
+{
+  "@type": "Person",
+  "@id": "{{ site.url }}/about/#person",
+  "name": "Matt Gates",
+  "url": "{{ site.url }}/about/",
+  "image": "{{ site.url }}/assets/images/matt-gates-office-vancouver-2026.jpg",
+  "jobTitle": [
+    "Leadership Development Consultant",
+    "Leadership Coach",
+    "Intercultural Communication Specialist"
+  ],
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Vancouver, Canada"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Peak Potential Consulting",
+    "url": {{ site.social.ppc_website | jsonify }},
+    "sameAs": {{ site.social.ppc_linkedin | jsonify }}
+  },
+  "sameAs": [
+    {{ site.social.linkedin | jsonify }},
+    {{ site.social.youtube | jsonify }},
+    {{ site.social.ppc_website | jsonify }}
+  ],
+  "knowsAbout": [
+    "Leadership development",
+    "Cross-cultural communication",
+    "Intercultural communication",
+    "Leadership coaching",
+    "Executive coaching",
+    "Feedback and accountability",
+    "Multicultural teams",
+    "Global teams",
+    "AI literacy for leaders"
+  ]
+}
