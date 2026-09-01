@@ -13,16 +13,9 @@
     "@type": "Place",
     "name": "Vancouver, Canada"
   },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Peak Potential Consulting",
-    "url": {{ site.social.ppc_website | jsonify }},
-    "sameAs": {{ site.social.ppc_linkedin | jsonify }}
-  },
+  "worksFor": { "@id": "{{ site.social.ppc_website }}#organization" },
   "sameAs": [
-    {{ site.social.linkedin | jsonify }},
-    {{ site.social.youtube | jsonify }},
-    {{ site.social.ppc_website | jsonify }}
+    {{ site.social.linkedin | jsonify }}
   ],
   "knowsAbout": [
     "Leadership development",

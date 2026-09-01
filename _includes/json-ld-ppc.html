@@ -1,0 +1,10 @@
+{
+  "@type": "Organization",
+  "@id": "{{ site.social.ppc_website }}#organization",
+  "name": "Peak Potential Consulting",
+  "url": {{ site.social.ppc_website | jsonify }},
+  "sameAs": [
+    {{ site.social.ppc_linkedin | jsonify }},
+    {{ site.social.youtube | remove: "/shorts" | jsonify }}
+  ]
+}

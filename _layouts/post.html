@@ -83,23 +83,31 @@ layout: default
   "@graph": [
     {% include json-ld-organization.html %},
     {% include json-ld-person.html %},
+    {% include json-ld-ppc.html %},
     {% include json-ld-website.html %},
+    {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}#webpage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ page.title | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumb" },
+      "mainEntity": { "@id": "{{ page.url | absolute_url }}#article" }
+    },
     {
       "@type": "BlogPosting",
       "@id": "{{ page.url | absolute_url }}#article",
       "url": "{{ page.url | absolute_url }}",
-      "mainEntityOfPage": { "@id": "{{ page.url | absolute_url }}" },
+      "mainEntityOfPage": { "@id": "{{ page.url | absolute_url }}#webpage" },
       "headline": {{ page.title | jsonify }},
       "description": {{ article_description | jsonify }},
       "image": {{ article_image_url | jsonify }},
       "datePublished": "{{ page.date | date_to_xmlschema }}",
       "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
       "author": { "@id": "{{ site.url }}/about/#person" },
-      "publisher": { "@id": "{{ site.url }}/#organization" },
-      {% if topic %}"articleSection": {{ topic | jsonify }},{% endif %}
-      {% if page.tags.size > 0 %}"keywords": {{ page.tags | join: ", " | jsonify }},{% endif %}
-      "isPartOf": { "@id": "{{ site.url }}/#website" },
-      "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumb" }
+      "publisher": { "@id": "{{ site.url }}/#organization" }{% if topic %},
+      "articleSection": {{ topic | jsonify }}{% endif %}{% if page.tags.size > 0 %},
+      "keywords": {{ page.tags | join: ", " | jsonify }}{% endif %}
     },
     {% include breadcrumb-jsonld.html trail=breadcrumb_trail current=page.title page_url=page.url %}
   ]
