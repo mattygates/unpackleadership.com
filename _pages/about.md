@@ -4,7 +4,7 @@ title: Matt Gates
 permalink: /about
 ---
 
-I help leaders become more thoughtful, adaptable, and effective in how they lead themselves, communicate with others, and navigate the complexity of today's workplace.
+I help leaders become more thoughtful, adaptable, and effective — in how they lead themselves, lead others one-to-one, lead teams as a whole, and navigate the complexity of today's workplace across cultures.
 
 My work sits at the intersection of leadership development, intercultural communication, coaching, and emerging technology. I design learning experiences, facilitate conversations, and translate research into practical tools leaders can use when giving feedback, managing conflict, building trust, making decisions, leading through change, and working across cultures.
 

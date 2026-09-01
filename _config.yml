@@ -1,6 +1,6 @@
 # Site
 name: "Unpack Leadership"
-title: "Lead yourself. Lead others. Lead across cultures."
+title: "Lead Yourself. Lead Others. Lead Teams. Lead Across Cultures."
 description: "Leadership development and intercultural communication insights from Matt Gates."
 logo: 'assets/images/logo-placeholder.svg'
 favicon: 'assets/images/logo-placeholder.svg'
@@ -14,7 +14,7 @@ author:
   name: Matt Gates
   location: "Vancouver, Canada"
   email: matt.gates65@gmail.com
-  headline: "Lead yourself. Lead others. Lead across cultures."
+  headline: "Lead Yourself. Lead Others. Lead Teams. Lead Across Cultures."
   roles_line1: "Leadership Development · Intercultural Communication"
   roles_line2: "Coaching · AI and the Future of Work"
   bio: "I help leaders and teams build the self-awareness, coaching skills, and cross-cultural fluency they need to lead well in a connected world."
@@ -40,16 +40,16 @@ authors:
 topics:
   - name: "Lead Self"
     slug: "lead-self"
-    description: "Self-awareness, emotional intelligence, resilience, mindset, and decision-making."
+    description: "Lead yourself with greater awareness, judgment, adaptability and emotional intelligence."
   - name: "Lead Others"
     slug: "lead-others"
-    description: "Coaching, feedback, delegation, conflict management, and building trust."
+    description: "Build stronger one-to-one leadership through feedback, coaching, influence, trust, accountability and difficult conversations."
   - name: "Lead Teams"
     slug: "lead-teams"
-    description: "Team effectiveness, psychological safety, collaboration, and accountability."
+    description: "Create the conditions for teams to collaborate, make decisions, handle conflict, take ownership and perform well together."
   - name: "Lead Across Cultures"
     slug: "lead-across-cultures"
-    description: "Cross-cultural communication, multicultural teamwork, and global leadership."
+    description: "Lead effectively across cultural differences through cultural intelligence, intercultural communication, trust and global-team leadership."
 
 # Plugins
 plugins:
