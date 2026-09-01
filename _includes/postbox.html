@@ -1,7 +1,8 @@
 {% assign topic = include.post.categories[0] %}
+{% assign image_prefix = include.post.image | slice: 0 %}
 <article class="article-card">
   <a class="article-card-thumb" href="{{ site.baseurl }}{{ include.post.url }}">
-    <img src="{% if include.post.image contains '://' %}{{ include.post.image }}{% else %}{{ site.baseurl }}/{{ include.post.image | default: 'assets/images/placeholder-article.svg' }}{% endif %}" alt="{{ include.post.title }}" loading="lazy">
+    <img src="{% if include.post.image contains '://' %}{{ include.post.image }}{% elsif image_prefix == '/' %}{{ site.baseurl }}{{ include.post.image }}{% else %}{{ site.baseurl }}/{{ include.post.image | default: 'assets/images/placeholder-article.svg' }}{% endif %}" alt="{{ include.post.title }}" loading="lazy">
   </a>
   <div class="article-card-body">
     {% if topic %}

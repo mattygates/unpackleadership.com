@@ -2,6 +2,7 @@
 name: "Unpack Leadership"
 title: "Lead Yourself. Lead Others. Lead Teams. Lead Across Cultures."
 description: "Leadership development and intercultural communication insights from Matt Gates."
+url: "https://unpackleadership.com"
 logo: 'assets/images/logo-placeholder.svg'
 favicon: 'assets/images/logo-placeholder.svg'
 baseurl: ""
@@ -22,7 +23,7 @@ author:
 # Social links (replace youtube placeholder with your real profile URL when ready)
 social:
   linkedin: "https://www.linkedin.com/in/mattygates/"
-  youtube: "#"
+  youtube: "https://www.youtube.com/@PeakPotential-Consulting/shorts"
   ppc_linkedin: "https://www.linkedin.com/company/peakpotentialconsulting/"
   ppc_website: "https://www.peakpotentialconsulting.com/"
 
@@ -31,7 +32,7 @@ authors:
   matt:
     name: matt
     display_name: Matt Gates
-    avatar: 'assets/images/Matt_aboutpic.png'
+    avatar: 'assets/images/matt-gates-office-vancouver-2026.png'
     email: matt.gates65@gmail.com
     web: https://unpackleadership.com
     description: "Leadership development and intercultural communication. Based in Vancouver, Canada."
@@ -40,13 +41,13 @@ authors:
 topics:
   - name: "Lead Self"
     slug: "lead-self"
-    description: "Lead yourself with greater awareness, judgment, adaptability and emotional intelligence."
+    description: "Lead yourself with greater self-awareness, judgment, adaptability, emotional intelligence, and AI literacy."
   - name: "Lead Others"
     slug: "lead-others"
-    description: "Build stronger one-to-one leadership through feedback, coaching, influence, trust, accountability and difficult conversations."
+    description: "Build stronger one-to-one leadership through coaching, feedback, influence, trust, accountability and difficult conversations."
   - name: "Lead Teams"
     slug: "lead-teams"
-    description: "Create the conditions for teams to collaborate, make decisions, handle conflict, take ownership and perform well together."
+    description: "Create the conditions for teams to collaborate, make decisions, handle conflict, take ownership, and perform well together — including human-AI coordination."
   - name: "Lead Across Cultures"
     slug: "lead-across-cultures"
     description: "Lead effectively across cultural differences through cultural intelligence, intercultural communication, trust and global-team leadership."
@@ -79,4 +80,4 @@ kramdown:
     block:
       line_numbers: true
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor]

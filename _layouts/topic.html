@@ -7,17 +7,38 @@ layout: default
     <span class="section-eyebrow">Topic</span>
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
+    {% if page.intro %}
+      <div class="topic-intro">
+        {{ page.intro | markdownify }}
+      </div>
+    {% endif %}
+
+    {% if page.focus_areas %}
+      <div class="topic-focus">
+        <h2>What you'll find here</h2>
+        <ul>
+          {% for item in page.focus_areas %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
   </div>
 </div>
 
 <section class="section">
   <div class="wrap">
+    <div class="section-head">
+      <h2>{{ page.articles_heading | default: "Latest Articles" }}</h2>
+      <a class="view-all" href="{{ site.baseurl }}/articles/">View all articles →</a>
+    </div>
+
     <div class="card-grid">
       {% assign topic_posts = site.categories[page.category] %}
       {% for post in topic_posts %}
         {% include postbox.html post=post %}
       {% else %}
-        <p>No articles in this topic yet — check back soon.</p>
+        <p>No articles in this topic yet. Check back soon.</p>
       {% endfor %}
     </div>
   </div>
