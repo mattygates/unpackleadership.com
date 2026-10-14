@@ -871,6 +871,91 @@ p { margin: 0 0 1.1em; }
 }
 
 /* ---------------------------------------------------------------------- */
+/* Contact form                                                            */
+/* ---------------------------------------------------------------------- */
+
+.contact-form {
+  margin-top: 32px;
+  max-width: 620px;
+}
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-tint);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 170px;
+}
+
+/* Honeypot field — off-screen for people, tempting for spam bots.
+   Hidden this way (not display:none) so bots still try to fill it. */
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-note {
+  margin-top: 18px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.form-success {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 34px 34px 28px;
+  margin-top: 10px;
+}
+.form-success h2 { margin-top: 0; }
+.form-success p:last-child { margin-bottom: 0; }
+
+/* ---------------------------------------------------------------------- */
 /* Responsive                                                              */
 /* ---------------------------------------------------------------------- */
 
@@ -883,6 +968,7 @@ p { margin: 0 0 1.1em; }
   .about-page .wrap { grid-template-columns: 1fr; }
   .about-page-figure { position: static; max-width: 320px; }
   .home-video-player { max-width: 100%; }
+  .main-nav { gap: 22px; }
 }
 
 @media (max-width: 640px) {
